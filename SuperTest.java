@@ -10,7 +10,7 @@ public class SuperTest {
 	}
 }
 
-class Parent {
+class Parent {  
 	int x = 10;
 }
 

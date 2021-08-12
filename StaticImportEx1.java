@@ -3,6 +3,7 @@
  * @author user EunSu Seo
  * last modified 2021-08-13
  */
+
 // 맨 마지막 .의 앞에 있는 단어를 생략할 수 있게 되는 것.
 import static java.lang.System.out;		// out이 System을 생략 가능.
 import static java.lang.Math.*;			// *(= 모든 멤버들)이 Math를 생략 가능.

@@ -1,7 +1,7 @@
 /**
  * 매개변수의 다형성을 이용한 예제.
  * @author user EunSu Seo
- * last modified 2021-08-19
+ * last modified 2021-08-20
  */
 class Product1 {
 	int price;
@@ -56,7 +56,7 @@ class Buyer1 {
 		for (int i = 0; i < item.length; i++) {
 			if (item[i] == null) break;
 			sum += item[i].price;
-			itemList += (i == 0) ? "" + item[i] : ", " + item[i];	// "" 또는 ", " 문자열을 객체에 +연산을 함으로서 객체를 문자열로서 저장.
+			itemList += (i == 0) ? "" + item[i] : ", " + item[i];	// 객체에 문자열을 +연산함으로서 객체를 문자열로서 저장.
 		}
 		System.out.println("구입하신 물품의 총 금액은 " + sum + "만원입니다.");
 		System.out.println("구입하신 제품은 " + itemList + "입니다.");

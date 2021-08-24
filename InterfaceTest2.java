@@ -3,23 +3,23 @@
  * @author user EunSu Seo
  * last modified 2021-08-24
  */
-class A {
-	void autoPlay(I i) {
+class A2 {
+	void autoPlay(I2 i) {
 		i.play();
 	}
 }
 
-interface I {
+interface I2 {
 	public abstract void play();
 }
 
-class B implements I {
+class B2 implements I2 {
 	public void play() {
 		System.out.println("play in B class");
 	}
 }
 
-class C implements I {
+class C2 implements I2 {
 	public void play() {
 		System.out.println("play in C class");
 	}
@@ -27,9 +27,9 @@ class C implements I {
 
 public class InterfaceTest2 {
 	public static void main(String[] args) {
-		A a = new A();
-		a.autoPlay(new B());	
-		a.autoPlay(new C());	// 인스턴스 B와 C는 인터페이스 I를 구현한 클래스의 인스턴스들이기 때문에
+		A2 a = new A2();
+		a.autoPlay(new B2());	
+		a.autoPlay(new C2());	// 인스턴스 B와 C는 인터페이스 I를 구현한 클래스의 인스턴스들이기 때문에
 								// autoPlay(I i)메서드의 매개변수로 들어갈 수 있다.
 	}
 }

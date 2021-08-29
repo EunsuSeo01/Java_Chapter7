@@ -1,5 +1,5 @@
 /**
- * 
+ * 연습문제 7-11 풀이.
  * @author user EunSu Seo
  * last modified 2021-08-29
  */
@@ -18,19 +18,21 @@ class MyTv2_2 {
 		this.isPowerOn = isPowerOn;
 	}
 	public boolean getIsPowerOn() { return isPowerOn; }
-
+	
 	public void setChannel(int channel) {
+		if (channel < MIN_VOLUME || channel > MAX_VOLUME)
+			return;
 		prevChannel = this.channel;
 		this.channel = channel;
 	}
-	
 	public int getChannel() { return channel; }
-
+	
 	public void setVolume(int volume) {
+		if (volume > MAX_VOLUME || volume < MIN_VOLUME)
+			return;
 		this.volume = volume;
 	}
 	public int getVolume() { return volume; }
-
 	public void gotoPrevChannel() {
 		setChannel(prevChannel);
 	}

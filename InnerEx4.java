@@ -23,7 +23,7 @@ class Outer {
 }
 public class InnerEx4 {
 	public static void main(String[] args) {
-		// (static에서) 인스턴스 클래스(내부 클래스)의 인스턴스를 생성하려면
+		// (static메서드나 static 클래스 내에서) 인스턴스 클래스(내부 클래스)의 인스턴스를 생성하려면
 		// 외부 클래스의 인스턴스를 먼저 생성해야 함!
 		Outer oc = new Outer();
 		Outer.InstanceInner ii = oc.new InstanceInner();

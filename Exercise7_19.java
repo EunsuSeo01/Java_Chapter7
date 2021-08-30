@@ -23,7 +23,7 @@ class Buyer_Ex19 {
 			Product_Ex19[] newCart = new Product_Ex19[cart.length * 2];
 			
 			for (int i = 0; i < cart.length; i++) {
-				newCart[i] = cart[i];
+				newCart[i] = cart[i];	// 기존의 내용을 새 장바구니에 복사.
 			}
 			cart = newCart;
 		}
@@ -35,6 +35,8 @@ class Buyer_Ex19 {
 	void summary() {
 		System.out.print("구입한 물건:");
 		for (int i = 0; i < cart.length; i++) {
+			if(cart[i]==null)
+				break;
 			System.out.print(cart[i] + ",");
 		}
 		System.out.println();
